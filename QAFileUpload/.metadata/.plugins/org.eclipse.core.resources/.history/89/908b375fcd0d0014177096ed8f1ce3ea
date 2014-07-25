@@ -1,0 +1,15 @@
+package com.follett.connector.util;
+
+public class ErrorBean {
+
+	public void setErrorCode(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setErrorMessage(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

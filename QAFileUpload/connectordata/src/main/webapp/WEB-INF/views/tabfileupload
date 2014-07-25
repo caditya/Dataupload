@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<html>
+<head>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link href="<c:url value="/resources/css/coffee.css" />"
+	rel="stylesheet">
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#submit-button").click(function() {
+			$("#newaccountform").attr("action", "/it/createnewaccount");
+			$("#newaccountform").attr("method", "post");
+			$("#newaccountform").submit();
+		});
+		
+		$(function() {
+		    $(document).keypress(function(event) {
+		        var ch = String.fromCharCode(event.keyCode || event.charCode);
+		        switch (ch) {
+		            case 'a': case 'A':
+		                window.location.href = '/connector/file';
+		                break;
+		            case 'c': case 'C':
+		            	window.location.href = '/connector/file';
+		                break;
+		        }
+		    });
+		});
+
+		// perform JavaScript after the document is scriptable.
+		$(function() {
+		    // setup ul.tabs to work as tabs for each div directly under div.panes
+		    $("ul.tabs").tabs("div.panes > div");
+		});
+		
+		
+	});
+</script>
+
+<script>
+	!function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
+				.test(d.location) ? 'http' : 'https';
+		if (!d.getElementById(id)) {
+			js = d.createElement(s);
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}
+	}(document, 'script', 'twitter-wjs');
+</script>
+<title>Follett Apps</title>
+<style>
+.error {
+	color: #ff0000;
+}
+</style>
+</head>
+<body>
+
+	<%@ include file="shared/CoffeeHeader.jsp"%>
+	<c:if test="${'Account Created' eq account_status}">
+		<c:out value="Account Created1"></c:out>
+	</c:if>
+<!-- the tabs -->
+<ul class="tabs">
+	<li><a href="/connector/tabuploadlink">Tab 1</a></li>
+	<li><a href="#">Tab 2</a></li>
+	<li><a href="#">Tab 3</a></li>
+</ul>
+ 
+<!-- tab "panes" -->
+<div class="panes">
+	<div>First tab content. Tab contents are called "panes"</div>
+	<div>Second tab content</div>
+	<div>Third tab content</div>
+</div>
+
+
+	
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+package com.follett.connector.util;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class DataBlock {
+	
+	String storeId;
+	String campusId;
+	String term;
+	MultipartFile dataFile;
+
+}

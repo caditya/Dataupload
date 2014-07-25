@@ -1,0 +1,46 @@
+package com.follett.connector.util;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.yaml.snakeyaml.Yaml;
+
+public class YamlParser {
+
+	public static void main(String args[]) {
+		YamlParser yParser = new YamlParser();
+		yParser.parse();
+	}
+
+	private void parse() {
+		Yaml yaml = new Yaml();
+		Map<String, String> yamlMap = new HashMap<String, String>();
+
+		try {
+			InputStream input = new FileInputStream(
+					new File(
+							"C://Aditya//myworkspace//QAFileUpload//connectordata//src//main//java//com//follett//connector//util//configuration.yaml"));
+			Object obj = yaml.load(input);
+			System.out.println(obj);
+			Map<String, Object> result = (Map<String, Object>) obj;
+			for (Object name : result.keySet()) {
+
+				System.out.println(name.toString() + " : "
+						+ result.get(name).toString());
+				System.out.println("*************");
+
+			}
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

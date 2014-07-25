@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Jul 21 15:58:48 CDT 2014
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\adchaudhary\\.m2\\repository\\org\\springframework\\spring-web\\4.0.5.RELEASE\\spring-web-4.0.5.RELEASE.jar=C\:\\installations\\sts\\vfabric-tc-server-developer-2.9.5.SR1\\base-instance\\wtpwebapps\\connectordata\\WEB-INF\\lib\\spring-web-4.0.5.RELEASE.jar
+org.eclipse.jst.jee.server\:connectordata=C\:\\installations\\sts\\vfabric-tc-server-developer-2.9.5.SR1\\base-instance\\wtpwebapps\\connectordata

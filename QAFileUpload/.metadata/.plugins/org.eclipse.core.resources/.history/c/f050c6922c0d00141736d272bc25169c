@@ -1,0 +1,10 @@
+package com.follett.connector.service;
+
+import com.follett.connector.util.DataBlock;
+
+public interface ConnectorService {
+
+	public int addProduct(DataBlock product) {}
+		
+		
+}

@@ -1,0 +1,12 @@
+package com.follett.connector.service;
+
+import com.follett.connector.util.DataBlock;
+
+public class productService {
+
+	public static int addProduct(DataBlock product) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

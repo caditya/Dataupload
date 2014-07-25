@@ -1,0 +1,9 @@
+package com.follett.connector.util;
+
+public class DataBlock {
+	
+	String storeId;
+	String campusId;
+	String term;
+
+}

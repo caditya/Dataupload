@@ -1,0 +1,21 @@
+package com.follett.connector.util;
+
+import org.yaml.snakeyaml.Yaml;
+
+public class YamlParser {
+
+	public static void main(String args[]) {
+		YamlParser yParser = new YamlParser();
+		yParser.parse();
+	}
+
+	private void parse() {
+		Yaml yaml = new Yaml();
+		InputStream input = new FileInputStream(new File("C:\\Aditya));
+		Object obj = yaml.load("a: 1\nb: 2\nc:\n  - aaa\n  - bbb");
+		System.out.println(obj);
+
+		
+	}
+
+}

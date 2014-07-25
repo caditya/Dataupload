@@ -1,0 +1,25 @@
+1405518465588	Copy file
+1405522741303	Delete element
+1405524772395	Move file
+1405524781419	Copy file
+1405526386229	Delete element
+1405526413469	Rename resource 'addproduct.jsp'
+1405526525169	Move files
+1405528262411	Move compilation unit
+1405528284214	Rename package 'com.follett.connector.requesthandlers'
+1405528331951	Copy compilation unit
+1405528607191	Delete element
+1405528647173	Delete element
+1405542836632	Copy file
+1405542850350	Rename resource 'status'
+1405543165460	Rename resource 'fileupload.jsp'
+1405543195271	Rename resource 'status.jsp'
+1405544545594	Rename compilation unit 'productService.java'
+1405545113021	Move compilation unit
+1405545181902	Rename compilation unit 'ControllerServiceImpl.java'
+1405611365376	Copy file
+1405611885285	Delete element
+1405611921024	Move file
+1405613711254	Rename type 'ErrorBean'
+1405613732118	Rename type 'ResultBean'
+1405718611682	Rename method 'runNTimes'

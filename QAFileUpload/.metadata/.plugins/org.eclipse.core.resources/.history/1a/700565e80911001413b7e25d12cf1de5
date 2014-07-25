@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<!--
+   This is a jQuery Tools standalone demo. Feel free to copy/paste.
+   http://flowplayer.org/tools/demos/
+
+   Do *not* reference CSS files and images from flowplayer.org when in
+   production Enjoy!
+-->
+<head>
+  <title>Follett Apps</title>
+
+    <!-- include the Tools -->
+  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  
+  <!-- standalone page styling (can be removed) -->
+  <link rel="shortcut icon" href="http://jquerytools.org/media/img/favicon.ico">
+  <link rel="stylesheet" type="text/css"
+        href="http://jquerytools.org/media/css/standalone.css"/>
+
+  <link rel="stylesheet" type="text/css"
+      href="http://jquerytools.org/media/css/tabs-flowplayer-v2.css"/>
+<style>
+  #flowtabs li {
+  list-style-image:none !important;
+  list-style-type:none !important;
+  margin:0 !important;
+  }
+  #content div.skin2 div h2 {
+  margin-top:0px;
+  color:#ddd;
+  }
+</style>
+
+</head>
+<body><!-- tabs -->
+
+<ul id="flowtabs">
+  <li><a id="t1" href="#player_tab">Utilities</a></li>
+  <li><a id="t2" href="#plugins_tab">SQL Queries</a></li>
+  <li><a id="t3" href="#streaming_tab">Dashboard</a></li>
+  <li><a id="t3" href="#streaming_tab">About </a></li>
+</ul>
+
+<!-- panes -->
+<div id="flowpanes">
+
+  <!-- remove the space between tabs and panes -->
+  <br clear="all" />
+
+  <div>
+    <h2> Utilities </h2>
+
+    <img src="http://jquerytools.org/media/img/title/screens.png" alt="Flying screens"
+         style="float:left;margin:0 30px 200px 0" />
+
+    <p style="font-weight:bold">
+      <a href="/connector/file"> Upload data </a>
+    </p>
+   
+  
+  </div>
+
+  <div>
+    <h2> Run SQL Queries</h2>
+
+      
+  </div>
+
+  <div>
+    <h2>Dashboard</h2>
+
+    
+
+    <img src="http://jquerytools.org/media/img/title/eye192.png" alt="Flying screens" />
+
+  </div>
+
+  <div>
+    <h2>Follett Apps</h2>
+	
+    
+  </div>
+</div>
+
+<script>
+  $(function() {
+      $("#flowtabs").tabs("#flowpanes > div");
+    });
+</script>
+<%@ include file="shared/CoffeeFooter.jsp"%>
+</body>
+</html>

@@ -1,0 +1,10 @@
+package com.follett.connector.util;
+
+public class YamlParser {
+	
+	public static void main(String args[]){}
+	YamlParser yParser = new YamlParser();
+	
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.follett.connector.util;
+
+public class DataBlock {
+
+}

@@ -1,0 +1,31 @@
+package com.follett.connector.util;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+import org.yaml.snakeyaml.Yaml;
+
+public class YamlParser {
+
+	public static void main(String args[]) {
+		YamlParser yParser = new YamlParser();
+		yParser.parse();
+	}
+
+	private void parse() {
+		Yaml yaml = new Yaml();
+		try {
+			InputStream input = new FileInputStream(new File("C://Aditya//myworkspace//QAFileUpload//connectordata//src//main//java//com//follett//connector//util//configuration.yaml"));"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Object obj = yaml.load("a: 1\nb: 2\nc:\n  - aaa\n  - bbb");
+		System.out.println(obj);
+
+		
+	}
+
+}
